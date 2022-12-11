@@ -125,81 +125,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     chrome.storage.local.get("bright_block", (resp) => {
-
-        //console.log(resp.bright_block)
-
         let icon = document.getElementById("bright");
         icon.src = chrome.runtime.getURL(resp.bright_block[0]);
         resultList.appendChild(icon)
-
     })
 
     chrome.storage.local.get("dark_block", (resp) => {
-
-        //console.log(resp.darkt_block)
-
         let icon = document.getElementById("dark");
         icon.src = chrome.runtime.getURL(resp.dark_block[0]);
         resultList.appendChild(icon)
-
     })
 
     chrome.storage.local.get("middle_block", (resp) => {
-
-        //console.log(resp.darkt_block)
-
         let icon = document.getElementById("middle");
         icon.src = chrome.runtime.getURL(resp.middle_block[0]);
         resultList.appendChild(icon)
-
     })
-
-/*
-    chrome.storage.local.get("bright_color_hex_code", (resp) => {
-
-        if (resp.bright_color_hex_code && resp.bright_color_hex_code.length > 0) {
-
-            resp.bright_color_hex_code.forEach(hexCode => {
-
-                const liElem = document.createElement("li")
-                liElem.innerText = hexCode
-                liElem.style.backgroundColor = hexCode
-
-                liElem.addEventListener("click", () => {
-                    navigator.clipboard.writeText(hexCode);
-                    GiveMetheChild("#e19526", "Hex code is copied to clipboard!")
-                })
-
-                resultList.appendChild(liElem)
-
-            })
-
-        }
-
-    })
-
-    chrome.storage.local.get("dark_color_hex_code", (resp) => {
-
-        if (resp.dark_color_hex_code && resp.dark_color_hex_code.length > 0) {
-
-            resp.dark_color_hex_code.forEach(hexCode => {
-
-                const liElem = document.createElement("li")
-                liElem.innerText = hexCode
-                liElem.style.backgroundColor = hexCode
-
-                liElem.addEventListener("click", () => {
-                    navigator.clipboard.writeText(hexCode);
-                    GiveMetheChild("#e19526", "Hex code is copied to clipboard!")
-                })
-
-                resultList.appendChild(liElem)
-
-            })
-        }
-
-    })
-*/
 })
 
 
