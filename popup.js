@@ -53,13 +53,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
             buttonCont.appendChild(dark_button)
 
-            const ClearButton = document.createElement("button")
-            ClearButton.innerText = "Generate"
-            ClearButton.setAttribute("id", "ClearButton")
+            const GenButton = document.createElement("button")
+            GenButton.innerText = "Generate"
+            GenButton.setAttribute("id", "GenButton")
 
             const delay = ms => new Promise(res => setTimeout(res, ms));
 
-            ClearButton.addEventListener("click", async () => {
+            GenButton.addEventListener("click", async () => {
                 for (let i = 0; i < 2; i++) {
                 await delay(100); 
                 var middle = []
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
             })
 
             
-            mainCont.appendChild(ClearButton)
+            mainCont.appendChild(GenButton)
         }
     });
 
