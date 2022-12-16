@@ -1,6 +1,6 @@
 {
     "name": "Color picker",
-    "description": "Im stronger, im smarter, im better",
+    "description": "An extension that helps you choose a block mix for your BTE building",
     "version": "0.0.1",
     "manifest_version": 3,
     "action": {
@@ -26,5 +26,11 @@
     "web_accessible_resources": [{
         "matches": ["<all_urls>"],
         "resources": ["data/1.12.2 block textures/*"]
-    }]
+    }],
+    "icons": {
+        "16": "icons/blockgen16.png",
+        "32": "icons/blockgen32.png",
+        "48": "icons/blockgen48.png",
+        "128": "icons/blockgen128.png"
+      }
 }
