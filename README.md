@@ -9,4 +9,4 @@ First, you pick the brightest and darkest color of the building:
 
 Then, click generate!
 
-![Generating color](./assets/Generate%20color.png)
+![Generating color](./assets/Generate_color.png)
